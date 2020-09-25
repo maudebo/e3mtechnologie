@@ -1,0 +1,21 @@
+/********   ********/
+
+
+/****   FICHIER SCSS POUR LES MIXIN ****/
+
+
+/********   ********/
+
+
+/*EX:
+@mixin big_title{
+  @media only screen and (min-width: 1920px){
+    font-size: 1.8vw;
+  }
+  @media only screen and (max-width: 991px){
+    font-size: 20px;
+
+  }
+  font-size: $large-font-size;
+}
+*/

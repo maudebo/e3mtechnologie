@@ -1,0 +1,36 @@
+/********   ********/
+
+
+/****   FICHIER SCSS POUR LES BOUTONS  ****/
+
+
+/********   ********/
+
+
+/*EX:
+.dark-button-slider{
+  @extend .flex-center;
+  @extend .form_text;
+  color: $lightColor;
+  width: 280px;
+  height: 80px;
+  border: 1px solid $secondaryAccent;
+  transition: .3s;
+
+  &:hover{
+    box-shadow: inset 0 0 .4em rgba($lightColor,0.4), 0 0 .4em rgba($lightColor,0.4), 0 0 .4em rgba($lightColor,0.5);
+    text-shadow: 1px 0px 1px #fff;
+    color: $lightColor;
+  }
+  &:visited{
+    color: $lightColor;
+  }
+}
+.button{
+  @extend .flex-center;
+  @extend .button_text;
+  color: $lightColor;
+  text-align: center;
+
+}
+*/

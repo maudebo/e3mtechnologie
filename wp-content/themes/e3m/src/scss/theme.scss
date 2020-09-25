@@ -1,0 +1,59 @@
+/*
+	Theme Name: Vsons Child Theme
+	Theme URI: http://vsons.swiftideas.com
+	Description: An Incredible Responsive Multi-Purpose WordPress WooCommerce Theme - Designed & Developed by Swift Ideas ( www.swiftideas.com )
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Template: vsons
+	Version: 1.0
+	Author: Swift Ideas
+	Author URI: www.swiftideas.com
+
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+*/
+
+/* ----------------------------------------------------------------------------
+ * Normalize & Santize
+ * ------------------------------------------------------------------------- */
+@import "vendor/sanitize";
+// Config modules
+@import "vendor/normalize";
+
+//----------------------------------*\
+// GLOBAL
+//----------------------------------*/
+
+@import "global/variables";
+@import "global/typography";
+@import "global/mixin";
+@import "global/classes";
+@import "global/animation";
+@import "global/general";
+
+//----------------------------------*\
+// COMPONENTS
+//----------------------------------*/
+
+@import "components/buttons";
+@import "components/form";
+
+//----------------------------------*\
+// SECTION
+//----------------------------------*/
+
+@import "section/footer";
+@import "section/header";
+
+//----------------------------------*\
+// PAGES
+//----------------------------------*/
+
+// @import 'pages/404';
+// @import 'pages/about';
+// @import 'pages/contact';
+@import "pages/home";
+// @import 'pages/news';
+// @import 'pages/products';
+
+@import "global/breakpoints_general";

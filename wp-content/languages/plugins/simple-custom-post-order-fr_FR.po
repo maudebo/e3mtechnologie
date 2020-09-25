@@ -1,0 +1,93 @@
+# Translation of Plugins - Simple Custom Post Order - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Simple Custom Post Order - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-04-06 21:00:17+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Simple Custom Post Order - Stable (latest release)\n"
+
+#: settings.php:303
+msgid "Check to reset order of Post Types"
+msgstr "Cocher pour réinitialiser l’ordre des types de publications"
+
+#: settings.php:285
+msgid "Check to include other custom post types. You will need to update your settings after enabling this option."
+msgstr "Cocher pour inclure d’autres types de publications personnalisés. Vous devrez mettre à jour vos réglages après avoir activé cette option."
+
+#: settings.php:283
+msgid "NOTICE: This is for advanced users only."
+msgstr "Attention : uniquement pour les utilisateurs avancés."
+
+#: settings.php:281
+msgid "Show advanced view of Post Types"
+msgstr "Afficher la vue avancée des types de publication"
+
+#: settings.php:262
+msgid "Check to see advanced view of Post Types "
+msgstr "Cocher pour voir la vue avancée des types de publications "
+
+#: settings.php:293
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: settings.php:196
+msgid "Check to Sort Taxonomies"
+msgstr "Cocher pour trier les taxonomies"
+
+#: settings.php:144 settings.php:214
+msgid "Check All"
+msgstr "Tout cocher"
+
+#: settings.php:126
+msgid "Check to Sort Post Types"
+msgstr "Cocher pour trier les types de publication"
+
+#: settings.php:112
+msgid "Settings Updated."
+msgstr "Réglages mis à jour."
+
+#: settings.php:108
+msgid "Simple Custom Post Order Settings"
+msgstr "Réglages de Simple Custom Post Order"
+
+#: simple-custom-post-order.php:188
+msgid "SCPOrder"
+msgstr "SCPOrder"
+
+#: simple-custom-post-order.php:139
+msgid "Dismiss this notice."
+msgstr "Ignorer cette notification."
+
+#: simple-custom-post-order.php:138
+msgid "Get started !"
+msgstr "Commencer !"
+
+#: simple-custom-post-order.php:136
+msgid "Thank you for installing our awesome plugin, in order to enable it you need to go to the settings page and select which custom post or taxonomy you want to order."
+msgstr "Merci d'avoir installer notre géniale extension, pour l'activer vous devez vous rendre sur la page des réglages et sélectionner quel type de publication personnalisée ou taxonomie vous souhaitez ordonner."
+
+#. Author URI of the plugin
+msgid "https://colorlib.com/"
+msgstr "https://colorlib.com/"
+
+#. Author of the plugin
+msgid "Colorlib"
+msgstr "Colorlib"
+
+#. Description of the plugin
+msgid "Order Items (Posts, Pages, and Custom Post Types) using a Drag and Drop Sortable JavaScript."
+msgstr "Ordonnez des éléments (articles, pages et types de publication personnalisés) en utilisant un glisser/déposer en JavaScript."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins-wp/simple-custom-post-order/"
+msgstr "https://wordpress.org/plugins-wp/simple-custom-post-order/"
+
+#. Plugin Name of the plugin
+#: simple-custom-post-order.php:134
+msgid "Simple Custom Post Order"
+msgstr "Simple Custom Post Order"

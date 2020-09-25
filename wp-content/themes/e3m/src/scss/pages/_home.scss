@@ -1,0 +1,270 @@
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+  .home-background {
+    height: 100vh;
+  }
+  .big_title {
+    z-index: 10;
+    margin-left: -4vw;
+    line-height: 1;
+  }
+
+  .logo-cuir {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .down-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a svg .arrow-head {
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      transform: translateY(0);
+    }
+    a svg:hover {
+      .arrow-head {
+        transform: translateY(6%);
+      }
+    }
+  }
+
+  /**** PROPOS*/ //////////
+
+  #propos {
+    height: 80vh;
+    margin: 10vh 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .cuir_logo,
+  .metal_free_logo {
+    position: relative;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .cuir_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .img_cuir_logo {
+      position: absolute;
+      max-width: fit-content;
+    }
+  }
+  .metal_free_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5px;
+    .img_cuir_logo {
+      position: absolute;
+      bottom: 0;
+      max-width: fit-content;
+    }
+  }
+  // * {
+  //   background: #000 !important;
+  //   color: #0f0 !important;
+  //   outline: solid #f00 1px !important;
+  // }
+  .absolute-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .absolute-left-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 52vh;
+  }
+  .absolute-right-text {
+    position: absolute;
+    left: 60vh;
+    bottom: 8vw;
+    width: 56%;
+  }
+  #mission {
+    height: 80vh;
+    margin: 10vh 0;
+  }
+  .absolute-left-text {
+    position: absolute;
+    right: 65%;
+    bottom: 6vw;
+    width: 55%;
+  }
+  .absolute-right-img {
+    width: 50%;
+    height: 90vh;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+  }
+
+  #cuir-de-saumon {
+    padding: 10vh 0;
+  }
+  /********************************MASONRY*/
+}
+.grid {
+  width: 100%;
+  position: relative;
+}
+
+/* clearfix */
+.grid:after {
+  content: "";
+  display: block;
+  position: absolute;
+  clear: both;
+  height: 100%;
+  background-color: rgba($darkColor, 0.8);
+  width: 100%;
+}
+.grid-two {
+  &::after {
+    content: none;
+  }
+}
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+.grid-item {
+  height: 25vh;
+  float: left;
+
+  border: 2px solid #333;
+  border-color: $darkColor;
+}
+.grid-item--width25 {
+  width: 20%;
+  height: 25vh;
+}
+.grid-item--width1 {
+  width: 13%;
+}
+.grid-item--width15 {
+  width: 17%;
+}
+.grid-item--width2 {
+  width: 18%;
+  height: 25vh;
+}
+.grid-item--width4 {
+  width: 37%;
+}
+.grid-item--width3 {
+  width: 29%;
+  height: 30vh;
+}
+.grid-item--width45 {
+  width: 45%;
+  height: 22.5vh;
+  object-fit: cover;
+}
+.grid-item--width55 {
+  width: 55%;
+  height: 30vh;
+  object-fit: cover;
+}
+.grid-item--height1 {
+  height: 32vh;
+}
+
+.static-banner {
+  position: absolute;
+  left: 10px;
+  top: 12%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  color: white;
+
+  font-size: 22px;
+  z-index: 2; /* above items */
+}
+/* Portrait */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  header {
+    .icone_logo_header {
+      a:first-of-type {
+        width: 200px;
+        position: absolute;
+        left: 30px;
+      }
+    }
+  }
+  .logo-cuir {
+    display: block;
+    width: 40vw;
+    margin-bottom: -50px;
+  }
+
+  section {
+    height: 95vh;
+    padding: 2.5vh;
+  }
+  .bg_image {
+    align-items: center;
+  }
+  .big_title {
+    margin: 0;
+  }
+
+  .absolute-content {
+    position: static;
+  }
+  .absolute-right-text,
+  .absolute-left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 30px;
+  }
+  #translate-item,
+  #translate-item2 {
+    display: none;
+  }
+  #mission {
+    margin-top: 15vh;
+  }
+  #communaute {
+    height: auto !important;
+  }
+
+  .grid-item--width25 {
+    width: 50%;
+    height: 25vh;
+  }
+  .grid-item--width1 {
+    width: 20%;
+    height: 15vh;
+  }
+  .grid-item--width15 {
+    width: 30%;
+    height: 15vh;
+  }
+  .grid-item--width2 {
+    width: 18%;
+    height: 25vh;
+  }
+  .grid-item--width4 {
+    width: 37%;
+  }
+  .grid-item--width3 {
+    width: 50%;
+    height: 30vh;
+  }
+}

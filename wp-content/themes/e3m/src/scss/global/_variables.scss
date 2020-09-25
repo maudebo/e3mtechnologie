@@ -1,0 +1,35 @@
+/********   ********/
+/****   FICHIER SCSS POUR LES VARIABLES  ****/
+/********   ********/
+
+/********   ********/
+/****   COLOR  ****/
+/********   ********/
+
+$darkColor: rgba(15, 8, 0, 1);
+$accentColor: rgb(235, 148, 43);
+$lightColor: rgb(238, 235, 235);
+
+/********       ********/
+/****   FONT SIZE  ****/
+/********      ********/
+
+$small-mobile-font: 12px;
+$small-font-size: 2vh;
+$medium-font-mobile: 20px;
+$medium-font-size: 4vh;
+$large-font-size: 10vw;
+
+/********          ********/
+/****   BREAKPOINTS   ****/
+/********         ********/
+
+$bp-small: 24em;
+$bp-med: 46.8em;
+$bp-large: 50em;
+$bp-xl: 73em;
+
+$fontTitle: "Julius Sans One", sans-serif;
+$fontRegular: proxima-nova, sans-serif;
+$fontThin: 100;
+$fontBold: 500;

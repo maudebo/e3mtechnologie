@@ -1,0 +1,153 @@
+.row-footer {
+  align-items: center;
+  position: relative;
+  a,
+  span,
+  p,
+  address {
+    color: $accentColor;
+    font-size: medium;
+  }
+}
+.infos-contact {
+  img {
+    width: 20px;
+    height: auto;
+    margin-right: 20px;
+  }
+}
+p.question {
+  font-size: 6vw;
+}
+.btn-link {
+  color: $accentColor;
+  font-size: 6vw;
+}
+.btn-link:focus,
+.btn-link:hover {
+  text-decoration: none;
+  color: rgba($accentColor, 0.7);
+}
+.modal {
+  top: 15%;
+}
+.modal-dialog {
+  max-width: 55vh;
+  margin: 5% auto;
+}
+.modal-content {
+  background-color: $darkColor;
+  padding: 20px;
+  * {
+    color: $accentColor;
+    font-family: $fontTitle;
+  }
+  input {
+    color: $accentColor;
+    border-bottom: 1px solid $accentColor;
+
+    width: 100%;
+    font-family: $fontRegular;
+    color: $lightColor;
+    font-weight: 100;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  input[type="text"],
+  input[type="email"] {
+    border-top: 0;
+    border-radius: 1;
+    border-left: 0;
+    border-right: 0;
+  }
+  textarea {
+    border-color: $accentColor;
+    font-family: $fontRegular;
+    color: $lightColor;
+    font-weight: 100;
+    border-radius: 0;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 100px;
+  }
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+  font-family: $fontRegular;
+  color: $lightColor;
+  font-weight: 100;
+  border: 1px solid $accentColor;
+  border-radius: 0;
+  width: 100%;
+}
+.modal-backdrop {
+  background-color: rgba($darkColor, 1);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.close {
+  text-shadow: none;
+  opacity: 1;
+  span {
+    font-size: 4vh;
+  }
+}
+.wpcf7-not-valid-tip {
+  color: #ff5e00;
+  font-family: $fontRegular;
+  font-size: medium;
+}
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+  border-color: #ff5e00;
+  font-family: $fontRegular;
+  font-size: medium;
+  color: #ff5e00;
+}
+input[type="submit"] {
+  width: 50%;
+  background-color: rgba($darkColor, 1);
+  border-color: rgba($accentColor, 1);
+  color: $accentColor;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  font-family: $fontTitle;
+}
+#back-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 45px;
+}
+.back-button {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  svg .arrow-head {
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translateY(0);
+  }
+  svg:hover {
+    .arrow-head {
+      transform: translateY(6%);
+    }
+  }
+}
+.back-button.visible  {
+  opacity: 1;
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .back-button {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+/********   ********/
+
+
+/****   FICHIER SCSS POUR LES FORMULAIRES DU SITE  ****/
+
+
+/********   ********/
+
+
+/*EX:
+form {
+  input, textarea {
+    width: 100%;
+    border-radius: 0;
+    background-color: $lightColor;
+    &:placeholder-shown {
+      @extend .form_text;
+      padding-left: 10px;
+    }
+  }
+  input {
+    height: 80px;
+    color: $darkColor;
+  }
+  textarea {
+    resize: none;
+  }
+  input[type="submit"] {
+    @extend .red-button;
+  }
+
+}
+*/
