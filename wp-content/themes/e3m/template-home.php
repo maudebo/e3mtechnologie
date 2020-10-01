@@ -33,9 +33,8 @@ get_header();
             <div class="bg_image image-container"
                 style="background:url(<?php echo $champs_customs['image_en-tete']['url']; ?>) no-repeat;background-size:cover;height: 80vh; width: 100%;display: flex;flex-direction: column;justify-content: center;">
 
-                <h1 class="big_title section-title on-dark"><?php echo $champs_customs['titre_en-tete']; ?>
-                    <br><?php echo $champs_customs['titre_en-tete_2']; ?><br><?php echo $champs_customs['titre_en-tete_3']; ?>
-                </h1>
+                <?php echo $champs_customs['titre_en-tete']; ?>
+                    
                 <div class="hidden-lg-up">
                     <a href="" class="logo-cuir"><img src="<?php echo $champs_customs['logo_casteigt']; ?>"
                             alt="Logo cuir Casteigt"></a>
@@ -86,8 +85,8 @@ get_header();
                     <h2 class="white_title_text"><?php echo $champs_customs['titre_cuir']; ?></h2>
                     <h2 class="white_title_text"><?php echo $champs_customs['titre_cuir_2']; ?></h2>
                     <?php echo $champs_customs['texte_cuir']; ?>
-                    <a class="dark-button-slider"
-                        href="<?php echo $champs_customs['liste_de_produits']; ?>"><?php echo $champs_customs['titre_lien']; ?></a>
+                    <span><a class="internal-link"
+                        href="<?php echo $champs_customs['liste_de_produits']; ?>"><?php echo $champs_customs['titre_lien']; ?></a></span>
                 </div>
                 <?php foreach ($champs_customs['repeteur_images_cuir'] as $cuir) { ?>
                 <?php $image = get_sub_field('image'); ?>

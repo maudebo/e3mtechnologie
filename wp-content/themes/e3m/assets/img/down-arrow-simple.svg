@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="17.736" height="392.517" viewBox="0 0 17.736 392.517">
   <g id="down-arrow-simple" transform="translate(0.868 0.001)">
     <g id="Component_8_1" data-name="Component 8 – 1">
-      <line id="Line_10" data-name="Line 10" x1="0.51" y1="379.98" transform="translate(7.5)" fill="none" stroke="#f6ad57" stroke-miterlimit="10" stroke-width="2"/>
-      <path id="Path_18" data-name="Path 18" d="M2.39,147l8,14,8-14" transform="translate(-2.39 229.5)" fill="none" stroke="#f6ad57" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Line_10" data-name="Line 10" x1="0.51" y1="379.98" transform="translate(7.5)" fill="none"
+        stroke="#B9874C" stroke-miterlimit="10" stroke-width="2" />
+      <path id="Path_18" data-name="Path 18" d="M2.39,147l8,14,8-14" transform="translate(-2.39 229.5)" fill="none"
+        stroke="#B9874C" stroke-miterlimit="10" stroke-width="2" />
     </g>
   </g>
 </svg>

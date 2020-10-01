@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /*
-	Theme Name: Vsons Child Theme
+	Theme Name: e3m
 	Theme URI: http://vsons.swiftideas.com
 	Description: An Incredible Responsive Multi-Purpose WordPress WooCommerce Theme - Designed & Developed by Swift Ideas ( www.swiftideas.com )
 	License: GNU General Public License version 3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
-	Template: vsons
+	Template: e3m
 	Version: 1.0
 	Author: Swift Ideas
 	Author URI: www.swiftideas.com
@@ -694,10 +694,12 @@ $light: 'exo-light';
   overflow-y: initial !important; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 body {
-  background-color: #0f0800; }
+  background-color: #0f0800;
+  overflow-x: hidden; }
 
 h1 {
   font-size: 10vw; }
@@ -708,7 +710,7 @@ h2 {
 h1,
 h2,
 h3 {
-  color: #eb942b;
+  color: #b9874c;
   font-family: "Julius Sans One", sans-serif; }
 
 a {
@@ -718,7 +720,7 @@ a {
   -o-transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1); }
   a:visited {
-    color: #eb942b; }
+    color: #b9874c; }
   a:hover {
     opacity: 0.7;
     text-decoration: none;
@@ -737,7 +739,7 @@ address {
   font-size: 2vh; }
 
 small {
-  color: #eb942b;
+  color: #b9874c;
   font-family: proxima-nova, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -747,7 +749,42 @@ small {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #eb942b; }
+  color: #b9874c; }
+
+.internal-link {
+  display: inline-block;
+  margin-top: 2vh;
+  font-family: "Julius Sans One", sans-serif;
+  color: #b9874c;
+  position: relative; }
+  .internal-link::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #b9874c;
+    -webkit-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out; }
+  .internal-link:hover {
+    text-decoration: none; }
+  .internal-link:hover::before {
+    width: 100%; }
+  .internal-link::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: calc(100% + 15px);
+    height: 1px;
+    background-color: #b9874c; }
+  .internal-link::after {
+    content: url(../img/right-arrow.svg);
+    position: absolute;
+    bottom: -15px;
+    right: -30px; }
 
 .bg_image {
   position: relative; }
@@ -764,6 +801,8 @@ small {
     z-index: 2; }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
+  section {
+    margin-bottom: 20px; }
   .offset-lg-1,
   .offset-lg-2 {
     margin-left: 0; }
@@ -840,6 +879,20 @@ form {
 
 }
 */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  footer .icone_logo_header svg {
+    width: 50% !important; }
+
 .row-footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -849,7 +902,7 @@ form {
   .row-footer span,
   .row-footer p,
   .row-footer address {
-    color: #eb942b;
+    color: #b9874c;
     font-size: medium; }
 
 .infos-contact img {
@@ -861,13 +914,21 @@ p.question {
   font-size: 6vw; }
 
 .btn-link {
-  color: #eb942b;
+  color: #b9874c;
   font-size: 6vw; }
 
 .btn-link:focus,
 .btn-link:hover {
   text-decoration: none;
-  color: rgba(235, 148, 43, 0.7); }
+  color: rgba(185, 135, 76, 0.7); }
+
+.row_copyright > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .modal {
   top: 15%; }
@@ -880,11 +941,11 @@ p.question {
   background-color: #0f0800;
   padding: 20px; }
   .modal-content * {
-    color: #eb942b;
+    color: #b9874c;
     font-family: "Julius Sans One", sans-serif; }
   .modal-content input {
-    color: #eb942b;
-    border-bottom: 1px solid #eb942b;
+    color: #b9874c;
+    border-bottom: 1px solid #b9874c;
     width: 100%;
     font-family: proxima-nova, sans-serif;
     color: #eeebeb;
@@ -898,7 +959,7 @@ p.question {
     border-left: 0;
     border-right: 0; }
   .modal-content textarea {
-    border-color: #eb942b;
+    border-color: #b9874c;
     font-family: proxima-nova, sans-serif;
     color: #eeebeb;
     font-weight: 100;
@@ -913,7 +974,7 @@ input[type="email"]:focus {
   font-family: proxima-nova, sans-serif;
   color: #eeebeb;
   font-weight: 100;
-  border: 1px solid #eb942b;
+  border: 1px solid #b9874c;
   border-radius: 0;
   width: 100%; }
 
@@ -949,8 +1010,8 @@ input[type="email"]:focus {
 input[type="submit"] {
   width: 50%;
   background-color: #0f0800;
-  border-color: #eb942b;
-  color: #eb942b;
+  border-color: #b9874c;
+  color: #b9874c;
   border-radius: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,13 +1047,44 @@ input[type="submit"] {
         -ms-transform: translateY(6%);
             transform: translateY(6%); }
 
-.back-button.visible  {
+.back-button.visible {
   opacity: 1; }
 
-@media only screen and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .metal-free {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .metal-free img {
+      max-width: 80%; } }
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
   footer {
-    padding-left: 15px;
-    padding-right: 15px; } }
+    padding: 15px;
+    text-align: center; }
+    footer .icone_logo_header svg {
+      width: 50% !important;
+      padding: 20px 0; }
+    footer .btn-link {
+      font-size: 8vh; }
+  .infos-contact {
+    padding: 30px 0 0; }
+    .infos-contact > .row {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin-left: 17%; }
+  .row_copyright {
+    padding: 20px 0; }
+  small {
+    font-size: 1.5vh; } }
 
 @media only screen and (max-width: 1024px) {
   .back-button {
@@ -1055,7 +1147,7 @@ header {
       padding: 0 20px; }
       .main-menu ul li:not(:last-of-type) a {
         font-family: "Julius Sans One", sans-serif;
-        color: #eb942b;
+        color: #b9874c;
         position: relative; }
         .main-menu ul li:not(:last-of-type) a::before {
           content: "";
@@ -1064,7 +1156,7 @@ header {
           left: 0;
           width: 0;
           height: 1px;
-          background-color: #eb942b;
+          background-color: #b9874c;
           -webkit-transition: width 0.3s ease-in-out;
           -o-transition: width 0.3s ease-in-out;
           transition: width 0.3s ease-in-out; }
@@ -1109,7 +1201,7 @@ header {
     margin: 0; }
     .menu_langue ul li a {
       font-family: "Julius Sans One", sans-serif;
-      color: #eb942b; }
+      color: #b9874c; }
   .menu_langue #menu-langue {
     margin-top: 15px; }
     .menu_langue #menu-langue .sub-menu {
@@ -1193,7 +1285,7 @@ a.menu-list {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #eb942b;
+  background: #b9874c;
   border-radius: 0;
   opacity: 1;
   left: 0;
@@ -1271,21 +1363,7 @@ a.menu-list {
           transition: 0.3s;
           font-family: "Julius Sans One", sans-serif;
           position: relative;
-          color: #eb942b; }
-          .sidenav-mobile .menu-mobile ul li:not(:last-of-type) a::before {
-            content: "";
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: calc(100% + 15px);
-            height: 2px;
-            background-color: #eb942b; }
-          .sidenav-mobile .menu-mobile ul li:not(:last-of-type) a::after {
-            content: url(../img/right-arrow.svg);
-            position: absolute;
-            bottom: -17px;
-            right: -30px;
-            height: 100%; }
+          color: #b9874c; }
 
 .wpml-ls-item a {
   position: relative;
@@ -1293,14 +1371,14 @@ a.menu-list {
 
 .wpml-ls-native {
   font-family: "Julius Sans One", sans-serif;
-  border: 1px solid #eb942b;
-  color: #eb942b;
+  border: 1px solid #b9874c;
+  color: #b9874c;
   padding: 5px;
   position: relative;
   z-index: 0; }
 
 .sidenav-mobile.active {
-  left: 15px; }
+  left: 0; }
 
 #menu-langue-mobile {
   display: -webkit-box;
@@ -1345,10 +1423,10 @@ a.menu-list {
   position: absolute;
   height: 2px;
   width: 30px;
-  background: #eb942b;
+  background: #b9874c;
   border-radius: 0;
   opacity: 1;
-  right: 0;
+  right: 15px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
       transform: rotate(0deg);
@@ -1414,10 +1492,11 @@ a.menu-list {
     z-index: 100;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 2fr 5fr 60px;
+    grid-template-columns: 180px 5fr 50px;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding-bottom: 10px; }
     .mobile-header-grid .contact-header-mobile,
     .mobile-header-grid #nav_mobile {
       display: -webkit-box;
@@ -1433,14 +1512,19 @@ a.menu-list {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .row-header-mobile .btn-link {
+    position: relative;
+    top: 60px; }
   .svg a {
-    margin-left: 25px; }
+    margin-left: 15px; }
   .contact-header-mobile a {
-    padding: 0 20px 0 15px; }
+    padding: 0 20px 0 0; }
   .contact-header-mobile img {
-    width: 30px; }
+    width: 20px; }
   .sociaux {
-    position: initial; }
+    top: 70%;
+    right: auto;
+    left: auto; }
     .sociaux .social {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1556,9 +1640,9 @@ a.menu-list {
     bottom: 0;
     width: 100%; }
   .absolute-left-img {
-    position: absolute;
+    position: relative;
     left: 0;
-    bottom: 0;
+    top: 50px;
     width: 52vh; }
   .absolute-right-text {
     position: absolute;
@@ -1674,15 +1758,26 @@ a.menu-list {
     display: block;
     width: 40vw;
     margin-bottom: -50px; }
-  section {
-    height: 95vh;
-    padding: 2.5vh; }
+  section:not(.home-background) {
+    height: auto;
+    padding: 0 15px; }
   .bg_image {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .home-background .bg_image {
+    height: 95vh !important; }
+  .home-background .big_title {
+    font-size: 15vw;
+    position: relative;
+    top: -70px; }
+  #a-propos .bg_image,
+  #mission .bg_image {
+    height: auto !important; }
   .big_title {
     margin: 0; }
+  .static-banner {
+    top: 10vh; }
   .absolute-content {
     position: static; }
   .absolute-right-text,
@@ -1697,23 +1792,21 @@ a.menu-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 10px 30px; }
+    padding: 60px 30px; }
   #translate-item,
   #translate-item2 {
     display: none; }
-  #mission {
-    margin-top: 15vh; }
   #communaute {
     height: auto !important; }
   .grid-item--width25 {
-    width: 50%;
+    width: 49.8%;
     height: 25vh; }
   .grid-item--width1 {
     width: 20%;
-    height: 15vh; }
+    height: 14vh; }
   .grid-item--width15 {
-    width: 30%;
-    height: 15vh; }
+    width: 29.8%;
+    height: 14vh; }
   .grid-item--width2 {
     width: 18%;
     height: 25vh; }
@@ -1722,6 +1815,10 @@ a.menu-list {
   .grid-item--width3 {
     width: 50%;
     height: 30vh; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .no-ipad {
+    display: none; } }
 
 /********   ********/
 /****   FICHIER SCSS POUR LES BREAKPOINTS DES CLASSES GÉNÉRIQUES DU SITE  ****/

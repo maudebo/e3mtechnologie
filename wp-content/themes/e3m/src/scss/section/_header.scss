@@ -19,102 +19,104 @@ header {
 .icone_logo_header {
   position: relative;
   flex-direction: column;
+
   svg {
     width: 100%;
   }
 }
+
 .page-template-template-home {
   .icone_logo_header {
     display: flex;
     justify-content: center;
   }
 }
+
 .main-menu {
   display: flex;
   justify-content: flex-end;
+
   ul {
     margin: 0;
     display: flex;
     justify-content: space-between;
+
     li:not(:last-of-type) {
       padding: 0 20px;
+
       a {
-        font-family: $fontTitle;
-        color: $accentColor;
-        position: relative;
-        &::before {
-          content: "";
-          position: absolute;
-          bottom: -3px;
-          left: 0;
-          width: 0;
-          height: 1px;
-          background-color: $accentColor;
-          transition: width 0.3s ease-in-out;
-        }
-        &:hover {
-          text-decoration: none;
-        }
-        &:hover::before {
-          width: 100%;
-        }
+        @include link;
       }
     }
   }
 }
+
 @keyframes link {
   0% {
     width: 0;
   }
+
   100% {
     width: 100%;
   }
 }
+
 @keyframes link-reverse {
   0% {
     width: 100%;
   }
+
   100% {
     width: 0;
   }
 }
+
 .menu_langue {
   display: flex;
   justify-content: flex-end;
+
   ul {
     list-style-type: none;
     margin: 0;
+
     li {
       &:first-child {
         a::after {
         }
       }
+
       a {
         font-family: $fontTitle;
         color: $accentColor;
       }
     }
   }
+
   #menu-langue {
     margin-top: 15px;
+
     .sub-menu {
       opacity: 0;
       transition: 0.3s;
+
       li:first-child {
         &::after {
           content: none;
         }
       }
     }
+
     li:first-child {
       color: #0a246a;
       position: relative;
+
       &::after {
         content: url("../img/down-arrow.svg");
         position: absolute;
         top: 2px;
         right: 1.8vw;
       }
+
       &:hover {
         .sub-menu {
           opacity: 1;
@@ -135,8 +137,10 @@ header {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+
   ul.sidebar-nav {
     margin: calc(300px - 1vw) 0 0;
+
     li {
       a {
         padding: 50px 8px 8px 4vw;
@@ -262,6 +266,7 @@ a.menu-list {
   align-items: center;
   text-align: center;
   justify-content: center;
+
   .menu-mobile {
     width: 100%;
 
@@ -269,8 +274,10 @@ a.menu-list {
       width: 100%;
 
       margin: 0;
+
       li:not(:last-of-type) {
         height: 13vh;
+
         a {
           font-size: 8vw;
           text-decoration: none;
@@ -279,33 +286,37 @@ a.menu-list {
           font-family: $fontTitle;
           position: relative;
           color: $accentColor;
-          &::before {
-            content: "";
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: calc(100% + 15px);
-            height: 2px;
-            background-color: $accentColor;
-          }
-          &::after {
-            content: url(../img/right-arrow.svg);
-            position: absolute;
-            bottom: -17px;
-            right: -30px;
-            height: 100%;
-          }
+
+          // &::before {
+          //   content: "";
+          //   position: absolute;
+          //   bottom: -8px;
+          //   left: 0;
+          //   width: calc(100% + 15px);
+          //   height: 2px;
+          //   background-color: $accentColor;
+          // }
+
+          // &::after {
+          //   content: url(../img/right-arrow.svg);
+          //   position: absolute;
+          //   bottom: -15px;
+          //   right: -30px;
+
+          // }
         }
       }
     }
   }
 }
+
 .wpml-ls-item {
   a {
     position: relative;
     z-index: 10;
   }
 }
+
 .wpml-ls-native {
   font-family: $fontTitle;
   border: 1px solid $accentColor;
@@ -314,16 +325,20 @@ a.menu-list {
   position: relative;
   z-index: 0;
 }
+
 .sidenav-mobile.active {
-  left: 15px;
+  left: 0;
 }
 
 #menu-langue-mobile {
   display: flex;
+
   li {
     width: 50%;
+
     &:nth-child(1) {
       position: relative;
+
       &::after {
         content: "";
         position: absolute;
@@ -339,6 +354,7 @@ a.menu-list {
 .row-header-mobile {
   margin-top: 20px;
 }
+
 .col-header-mobile {
   svg {
     width: 200px;
@@ -348,6 +364,7 @@ a.menu-list {
     z-index: 5;
   }
 }
+
 ////////////////////////////////
 ///*****BURGER MOBILE **//////
 ////////////////////////////////
@@ -369,7 +386,7 @@ a.menu-list {
   background: $accentColor;
   border-radius: 0;
   opacity: 1;
-  right: 0;
+  right: 15px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -418,6 +435,7 @@ a.menu-list {
   top: 0;
   right: 3vh;
 }
+
 .social {
   display: flex;
   flex-direction: column;
@@ -435,22 +453,27 @@ a.menu-list {
       }
     }
   }
+
   li:first-of-type {
     margin-top: 0;
   }
 }
+
 /* Portrait */
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
   header {
     padding-top: 0;
   }
+
   .mobile-header-grid {
     position: relative;
     z-index: 100;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 2fr 5fr 60px;
+    grid-template-columns: 180px 5fr 50px;
     align-items: center;
+    padding-bottom: 10px;
+
     .contact-header-mobile,
     #nav_mobile {
       display: flex;
@@ -458,24 +481,36 @@ a.menu-list {
       align-items: center;
     }
   }
+
   .row-header-mobile {
     .row {
       align-items: center;
     }
+    .btn-link {
+      position: relative;
+      top: 60px;
+    }
   }
+
   .svg a {
-    margin-left: 25px;
+    margin-left: 15px;
   }
+
   .contact-header-mobile {
     a {
-      padding: 0 20px 0 15px;
+      padding: 0 20px 0 0;
     }
+
     img {
-      width: 30px;
+      width: 20px;
     }
   }
+
   .sociaux {
-    position: initial;
+    top: 70%;
+    right: auto;
+    left: auto;
+
     .social {
       display: flex;
       flex-direction: row;
@@ -483,12 +518,14 @@ a.menu-list {
       margin-left: 0;
       position: relative;
       top: 18vh;
+
       li {
         margin: 2vh;
       }
     }
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .down-arrow {
     display: none;

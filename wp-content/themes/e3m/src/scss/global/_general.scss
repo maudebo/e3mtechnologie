@@ -9,10 +9,12 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: $darkColor;
+  overflow-x: hidden;
 }
 h1 {
   font-size: $large-font-size;
@@ -63,7 +65,27 @@ small {
   font-style: normal;
   color: $accentColor;
 }
+.internal-link {
+  display: inline-block;
+  margin-top: 2vh;
+  @include link;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: calc(100% + 15px);
+    height: 1px;
+    background-color: $accentColor;
+  }
 
+  &::after {
+    content: url(../img/right-arrow.svg);
+    position: absolute;
+    bottom: -15px;
+    right: -30px;
+  }
+}
 .bg_image {
   position: relative;
   &::after {
@@ -82,6 +104,9 @@ small {
 }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
+  section {
+    margin-bottom: 20px;
+  }
   .offset-lg-1,
   .offset-lg-2 {
     margin-left: 0;

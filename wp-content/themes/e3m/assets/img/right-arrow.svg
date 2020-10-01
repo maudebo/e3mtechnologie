@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="17.736" height="16.512" viewBox="0 0 17.736 16.512" style="transform:rotate(-90deg)">
+<svg xmlns="http://www.w3.org/2000/svg" width="17.736" height="16.512" viewBox="0 0 17.736 16.512"
+  style="transform:rotate(-90deg)">
   <g id="Component_9_1" data-name="Component 9 – 1" transform="translate(0.868 0.496)">
-    <path id="Path_18" data-name="Path 18" d="M2.39,147l8,14,8-14" transform="translate(-2.39 -147)" fill="none" stroke="#f6ad57" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_18" data-name="Path 18" d="M2.39,147l8,14,8-14" transform="translate(-2.39 -147)" fill="none"
+      stroke="#f6ad57" stroke-miterlimit="10" stroke-width="1" />
   </g>
 </svg>

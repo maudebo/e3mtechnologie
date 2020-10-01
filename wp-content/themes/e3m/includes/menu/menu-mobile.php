@@ -8,7 +8,7 @@
                     .cls-3,
                     .cls-4 {
                         fill: none;
-                        stroke: #EB942B;
+                        stroke: #B9874C;
                         stroke-miterlimit: 10;
                     }
 
@@ -18,7 +18,7 @@
 
                     .cls-2,
                     .cls-5 {
-                        fill: #EB942B;
+                        fill: #B9874C;
                     }
 
                     .cls-3 {
@@ -74,10 +74,7 @@
             <a href="mailto:<?php the_field('courriel', 'options') ?>">
                 <img src="<?php the_field('icone_courriel', 'options') ?>" alt="icône courriel">
             </a>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contactForm">
-                ?
-            </button>
+
     </div>
     <div id="nav_mobile">
         <span></span>
@@ -98,7 +95,12 @@
         ));
         ?>
     </div>
-
+<div>
+                <!-- Button trigger modal -->
+            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contactForm">
+                ?
+            </button>
+</div>
     <div class="sociaux">
         <ul class="social">
             <?php if (have_rows('repeteur_sociaux', 'options')): ?>

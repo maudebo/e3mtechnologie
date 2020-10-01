@@ -1,18 +1,3 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package e3m
- */
-
-?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
-
 <head>
     <!-- Google Tag Manager -->
     <script>
@@ -39,15 +24,15 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="https://use.typekit.net/wgf4xqq.css">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <meta name="msapplication-TileColor" content="#eb942b">
+    <meta name="msapplication-TileColor" content="#0f0800">
     <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png">
-    <meta name="theme-color" content="#eb942b">
+    <meta name="theme-color" content="#0f0800">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF7549D" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-
+<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -76,7 +61,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row col-lg-12 row-header-mobile hidden-lg-up">
+        <div class="row-header-mobile hidden-lg-up">
             <?php include(locate_template('includes/menu/menu-mobile.php')); ?>
 
         </div>

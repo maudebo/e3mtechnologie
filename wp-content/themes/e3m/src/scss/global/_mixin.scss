@@ -1,11 +1,8 @@
 /********   ********/
 
-
 /****   FICHIER SCSS POUR LES MIXIN ****/
 
-
 /********   ********/
-
 
 /*EX:
 @mixin big_title{
@@ -19,3 +16,28 @@
   font-size: $large-font-size;
 }
 */
+
+@mixin link {
+  font-family: $fontTitle;
+  color: $accentColor;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $accentColor;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}

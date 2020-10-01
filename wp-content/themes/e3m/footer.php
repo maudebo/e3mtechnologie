@@ -15,7 +15,7 @@
 
 <footer id="colophon" class="site-footer">
     <div class="row col-lg-12 row-footer">
-        <div class="col-sm-2 icone_logo_header">
+        <div class="col-md-4 icone_logo_header">
             <a href="<?php echo get_site_url('/'); ?>" class="lien_home_footer">
 
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.9 43.43">
@@ -25,7 +25,7 @@
                         .cls-3,
                         .cls-4 {
                             fill: none;
-                            stroke: #EB942B;
+                            stroke: #B9874C;
                             stroke-miterlimit: 10;
                         }
 
@@ -35,7 +35,7 @@
 
                         .cls-2,
                         .cls-5 {
-                            fill: #EB942B;
+                            fill: #B9874C;
                         }
 
                         .cls-3 {
@@ -87,7 +87,7 @@
 
 
         </div>
-        <div class="col-lg-4 offset-lg-2 col-sm-6 infos-contact">
+        <div class="col-lg-4  col-sm-6 infos-contact">
 
             <div class="row col-lg-12">
                 <a href="tel:+15819959950">
@@ -116,7 +116,7 @@
                 ?
             </button>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 metal-free">
 
             <img class="img_cuir_logo"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cuir-sans-metal-1.svg"
@@ -126,12 +126,12 @@
 
     </div><!-- .site-info -->
     <div class="row row_copyright">
-        <div class="col-lg-4">
+        <div class="col-12">
 
             <?php if (ICL_LANGUAGE_CODE == 'fr') echo '
                                     <small>Tous droits réservés ' . date('Y') . '  e3mtechnologie-com <span>|</span> Réalisé par
                                     Simple Hub</small>>';
-            else echo '<small>>All rights reserved ' . date('Y') . '  e3mtechnologie-com <span>|</span> Made by
+            else echo '<small>All rights reserved ' . date('Y') . '  e3mtechnologie-com <span>|</span> Made by
                                     Simple Hub</small>'; ?>
 
         </div>
@@ -148,7 +148,7 @@
                             stroke="#f6ad57" stroke-miterlimit="10" stroke-width="2"></line>
                         <g class="arrow-head">
                             <path id="Path_18" data-name="Path 18" d="M2.39,147l8,14,8-14"
-                                transform="translate(-2.39 -10)" fill="none" stroke="#f6ad57" stroke-miterlimit="10"
+                                transform="translate(-2.39 -10)" fill="none" stroke="#B9874C" stroke-miterlimit="10"
                                 stroke-width="2"></path>
                         </g>
                     </g>

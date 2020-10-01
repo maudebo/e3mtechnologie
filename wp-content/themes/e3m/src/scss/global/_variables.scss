@@ -6,8 +6,8 @@
 /****   COLOR  ****/
 /********   ********/
 
-$darkColor: rgba(15, 8, 0, 1);
-$accentColor: rgb(235, 148, 43);
+$darkColor: rgb(15, 8, 0);
+$accentColor: rgb(185, 135, 76);
 $lightColor: rgb(238, 235, 235);
 
 /********       ********/
@@ -29,7 +29,9 @@ $bp-med: 46.8em;
 $bp-large: 50em;
 $bp-xl: 73em;
 
-$fontTitle: "Julius Sans One", sans-serif;
-$fontRegular: proxima-nova, sans-serif;
+$fontTitle: "Julius Sans One",
+sans-serif;
+$fontRegular: proxima-nova,
+sans-serif;
 $fontThin: 100;
 $fontBold: 500;
