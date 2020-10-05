@@ -706,6 +706,8 @@ h1 {
 
 h2 {
   font-size: 4vh; }
+  h2:last-of-type {
+    margin-bottom: 3vh; }
 
 h1,
 h2,
@@ -721,9 +723,10 @@ a {
   transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1); }
   a:visited {
     color: #b9874c; }
-  a:hover {
+  a:hover, a:focus {
     opacity: 0.7;
     text-decoration: none;
+    color: #b9874c;
     -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     -o-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
@@ -820,7 +823,12 @@ small {
   .hidden-md-down {
     display: none !important; }
   .hidden-lg-up {
-    display: block !important; } }
+    display: block !important; }
+  a,
+  span,
+  p,
+  address {
+    font-size: 16px; } }
 
 /********   ********/
 /****   FICHIER SCSS POUR LES BOUTONS  ****/
@@ -915,7 +923,8 @@ p.question {
 
 .btn-link {
   color: #b9874c;
-  font-size: 6vw; }
+  font-size: 6vw;
+  cursor: pointer; }
 
 .btn-link:focus,
 .btn-link:hover {
@@ -1346,7 +1355,8 @@ a.menu-list {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  opacity: 0.9; }
   .sidenav-mobile .menu-mobile {
     width: 100%; }
     .sidenav-mobile .menu-mobile ul {
@@ -1477,9 +1487,20 @@ a.menu-list {
   .social li {
     width: 35px;
     margin-right: 20px;
-    margin-top: 40px; }
-    .social li a img {
-      height: 35px; }
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .social li a {
+      text-transform: uppercase; }
+      .social li a img {
+        height: 35px; }
   .social li:first-of-type {
     margin-top: 0; }
 
@@ -1538,7 +1559,7 @@ a.menu-list {
               align-items: center;
       margin-left: 0;
       position: relative;
-      top: 18vh; }
+      top: 14vh; }
       .sociaux .social li {
         margin: 2vh; } }
 
@@ -1581,10 +1602,10 @@ a.menu-list {
           -ms-transform: translateY(6%);
               transform: translateY(6%); }
   /**** PROPOS*/
-  #propos {
+  #a-propos {
     height: 80vh;
-    margin: 10vh 0; }
-    #propos img {
+    margin-bottom: 5vh; }
+    #a-propos img {
       width: 100%;
       height: auto; }
   .cuir_logo,
@@ -1651,7 +1672,7 @@ a.menu-list {
     width: 56%; }
   #mission {
     height: 80vh;
-    margin: 10vh 0; }
+    margin: 0 0 10vh 0; }
   .absolute-left-text {
     position: absolute;
     right: 65%;

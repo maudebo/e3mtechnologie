@@ -21,6 +21,9 @@ h1 {
 }
 h2 {
   font-size: $medium-font-size;
+  &:last-of-type {
+    margin-bottom: 3vh;
+  }
 }
 h1,
 h2,
@@ -36,9 +39,11 @@ a {
   &:visited {
     color: $accentColor;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.7;
     text-decoration: none;
+    color: $accentColor;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 }
@@ -52,6 +57,7 @@ address {
   font-style: normal;
   font-size: $small-font-size;
 }
+
 small {
   color: $accentColor;
   font-family: $fontRegular;
@@ -130,5 +136,11 @@ small {
   }
   .hidden-lg-up {
     display: block !important;
+  }
+  a,
+  span,
+  p,
+  address {
+    font-size: 16px;
   }
 }

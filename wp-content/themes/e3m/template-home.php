@@ -86,7 +86,7 @@ get_header();
                     <h2 class="white_title_text"><?php echo $champs_customs['titre_cuir_2']; ?></h2>
                     <?php echo $champs_customs['texte_cuir']; ?>
                     <span><a class="internal-link"
-                        href="<?php echo $champs_customs['liste_de_produits']; ?>"><?php echo $champs_customs['titre_lien']; ?></a></span>
+                        href="#" data-toggle="modal" data-target="#contactForm"><?php echo $champs_customs['titre_lien']; ?></a></span>
                 </div>
                 <?php foreach ($champs_customs['repeteur_images_cuir'] as $cuir) { ?>
                 <?php $image = get_sub_field('image'); ?>

@@ -266,7 +266,7 @@ a.menu-list {
   align-items: center;
   text-align: center;
   justify-content: center;
-
+  opacity: 0.9;
   .menu-mobile {
     width: 100%;
 
@@ -446,8 +446,12 @@ a.menu-list {
     width: 35px;
     margin-right: 20px;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     a {
+      text-transform: uppercase;
       img {
         height: 35px;
       }
@@ -517,7 +521,7 @@ a.menu-list {
       align-items: center;
       margin-left: 0;
       position: relative;
-      top: 18vh;
+      top: 14vh;
 
       li {
         margin: 2vh;
